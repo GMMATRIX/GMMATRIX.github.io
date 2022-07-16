@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Balaji Temple of India</title>
+</head>
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+
+    <!-- Setting the welcome message that will change later in JavaScript -->
+    <header>
+        <img src="images/swami.png" class="logo logo-right" alt="Chinna Jeeyar Swami">
+        <img src="images/namam2.png" class="logo -r logo-left" alt="Chinna Jeeyar Swami">
+        <h1 class="welcome">Balaji Mandir India</h1>
+    </header>
+
+    <!-- NavBar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Setting the options in the navbar -->
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="events.html">Events</a>
+        <!-- Creating the first dropdown container >> Services -->
+        <div class="dropdown">
+            <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <!-- The options within the first dropdown container -->
+            <div class="dropdown-content">
+                <a href="#">Abhishekam</a>
+                <a href="#">Seva</a>
+                <a href="#">Hundi</a>
+                <a href="#">Accomodations</a>
+                <a href="#">Ayurveda</a>
+          </div>
+        </div>
+        <a href="daily_activities.html">Daily Activities</a>
+        <!-- Creating the next dropdown container >> Piligrim Services -->
+        <div class="dropdown">
+            <button class="dropbtn">Piligirim Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <!-- The options within the next dopdown container -->
+            <div class="dropdown-content">
+                <a href="transport.html">Transport to Temple</a>
+          </div>
+        </div>
+        <!-- The icon to be showed when responsiveness kicks in -->
+        <a href="javascript:void(0);" class="icon" onclick="respNavbar()">&#9776;</a>
+    </div>
+
+    <!-- Creating the slideshow -->
+    <div class="slideshow" style="margin-top: 10px;">
+        <div class="slides fade">
+            <img src="http://drive.google.com/uc?export=view&id=127WSE8TW5ETTkAXBeMxMM6oZbQDCOkNc" alt="" height="500" style="width:100%">
+        </div>
+        <div class="slides fade">
+            <img src="http://drive.google.com/uc?export=view&id=1Q6ZBllGJnWz2wRkptBJMTp4mQMWrR99K" alt="" height="500" style="width:100%">
+        </div>
+    </div>
+
+    <br>
+
+    <!-- The dots that show which section of the slideshow is sctive -->
+    <div style="text-align: center;">
+        <span class="sldsh-dot"></span>
+        <span class="sldsh-dot"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

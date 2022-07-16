@@ -1,0 +1,293 @@
+body{
+  background-image: url("images/s-bg.png");
+  background-size: cover;
+}
+
+/* Slideshow */
+/* Giving bae peoperties to the slideshow container */
+.slideshow {
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.sldsh-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* A background color for the active dot */
+.sldsh-active {
+  background-color: #717171;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; 
+}
+
+@keyframes fade {
+  from {opacity: .4;}
+  to {opacity: 1;}
+}
+
+
+/* Welcome Messages */
+/* Give some font properties to the message */
+.welcome{
+  height: 120px;
+  margin-top: 50px;
+  vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.logo-left { float: left; }
+
+.logo-right { float: right; }
+ 
+/* NavBar */
+/* Add a black background color to the top navigation */
+.topnav {
+  margin-top: 10px;
+  background-color: rgb(154, 41, 41);
+  background-image: linear-gradient(rgb(159, 44, 44), rgb(236, 58, 58));
+  text-align: center;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  border-right: white 1px solid;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav ul{
+  text-align: center;
+}
+  
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #5b0707;
+  background-image: linear-gradient(rgb(180, 82, 22), rgb(218, 144, 53));
+  color: white;
+}
+  
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+  
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+  
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  border-right: white 1px solid;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+  
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: rgb(154, 41, 41);
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav {
+    margin-top: 50px;
+  }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav {
+    display:block;
+    justify-content: left;}
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Google Map Iframe */
+.map-iframe {
+  text-align:center;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 75%;
+  border: none;
+}
+
+/* Gallery Cards */
+/* Card properties */
+.gallery-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+}
+
+/* Card hoverable properties */
+.gallery-card:hover {
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* Card image properties */
+.gallery-container > img {
+  border-radius: 5px 5px 0 0;
+}
+
+/* Card properties */
+.gallery-container {
+  padding: 2px 16px;
+}
+
+/* Card left and right width */
+.gallery-left {
+  width: 100%;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+}
+
+/* About */
+.about-par {
+  text-indent: 100px ;
+  font-size: 30px; 
+  font-weight: bold;
+  line-height: 2; 
+  padding: 50px; 
+  background-color: rgba(210, 180, 140, 0.45); 
+  border-radius: 0 0 10px 10px; 
+  font-family: 'Tangerine', cursive;
+}
+
+.about-par::first-letter {
+  color: red;
+  font-size: 200%;
+}
+
+/* Schedule */
+.mandir-act{
+  font-size: 20px; 
+  font-weight: bold;
+  text-align: center;
+  line-height: 2; 
+  padding: 25px; 
+  color: white;
+  background-color: rgba(255, 0, 0, 0.342); 
+  border-radius: 0 0 10px 10px; 
+  font-family: 'Tangerine', cursive;
+}
+
+.mandir-spe{
+  font-size: 20px; 
+  font-weight: bold;
+  text-align: center;
+  line-height: 2; 
+  padding: 25px; 
+  color: white;
+  background-color: rgba(146, 13, 255, 0.342); 
+  border-radius: 0 0 10px 10px; 
+  font-family: 'Tangerine', cursive;
+}

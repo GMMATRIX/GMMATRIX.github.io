@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <title>Balaji Temple of India</title>
+</head>
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+
+    <!-- NavBar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Setting the options in the navbar -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="events.html" class="active">Events</a>
+        <!-- Creating the first dropdown container >> Services -->
+        <div class="dropdown">
+            <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <!-- The options within the first dropdown container -->
+            <div class="dropdown-content">
+                <a href="#">Abhishekam</a>
+                <a href="#">Seva</a>
+                <a href="#">Hundi</a>
+                <a href="#">Accomodations</a>
+                <a href="#">Ayurveda</a>
+          </div>
+        </div>
+        <a href="daily_activities.html">Daily Activities</a>
+        <!-- Creating the next dropdown container >> Piligrim Services -->
+        <div class="dropdown">
+            <button class="dropbtn">Piligirim Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <!-- The options within the next dopdown container -->
+            <div class="dropdown-content">
+                <a href="transport.html">Transport to Temple</a>
+          </div>
+        </div>
+        <!-- The icon to be showed when responsiveness kicks in -->
+        <a href="javascript:void(0);" class="icon" onclick="respNavbar()">&#9776;</a>
+    </div>
+
+    <center>
+        <h1 style="color: rgb(118, 42, 16)">Bhaktotsavam</h1>
+        <h3>UPCOMING: July 29 - 31 2022</h3>
+        <iframe src="https://drive.google.com/file/d/1v-rjMFGIPW6uzw7Qa2DPR4F69N5tkJSt/preview" width="800" height="480" allow="autoplay"></iframe>
+    </center>
+
+    <script src="main.js"></script>
+</body>
+</html>
