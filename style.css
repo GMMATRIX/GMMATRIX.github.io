@@ -67,6 +67,10 @@ li a:hover {
   font-size: 1.4vw;
 }
 
+.projects{
+  text-align: center;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
