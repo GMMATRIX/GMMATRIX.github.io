@@ -1,9 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff00;
+  background-color: #0000003a;
   position: sticky;
   top: 0;
   width: 100%;
@@ -54,7 +58,7 @@ li a:hover {
   font-style: "Poppins";
   color: white;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 70px;
 }
 
 .welcome-bottom {
@@ -64,18 +68,39 @@ li a:hover {
   padding-left: 7%;
   font-style: "Poppins";
   color: white;
-  font-size: 1.4vw;
+  font-size: 15px;
 }
 
 .projects{
   text-align: center;
 }
 
+.gaming {
+  background-image: url("gaming3.jpg");
+  background-size: 50%;
+
+  /* Set a specific height */
+  min-height: 300px; 
+  max-width: 500px;
+
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.879);
+}
+
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 70%;
-  border: 1px solid #ddd;
+  border: 3px dashed #000000;
 }
 
 th, td {
@@ -88,11 +113,11 @@ th:first-child, td:first-child {
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #81a86e
 }
 
 .fa-check {
-  color: green;
+  color: rgb(16, 95, 91);
 }
 
 .fa-remove {
